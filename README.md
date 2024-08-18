@@ -27,7 +27,7 @@ This project is a robust and secure login system built using Node.js, `hbs` (Han
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/singhal0306/NodeJS-AuthPlus.git
-    cd your-repo-name
+    cd NodeJS-AuthPlus
     ```
 
 2. **Install dependencies:**
