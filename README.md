@@ -1,5 +1,5 @@
 # Node.js Login System with hbs Templates and Profile Image Management
-![Project Screenshot](![image](https://github.com/user-attachments/assets/93f7c091-c91e-443b-a02b-986a199196fd)
+![Project Screenshot](https://github.com/user-attachments/assets/93f7c091-c91e-443b-a02b-986a199196fd)
 
 ## Overview
 
