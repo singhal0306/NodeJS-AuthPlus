@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryansh Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav>
+        <h4>Suryansh Project</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/auth/logout">Log Out </a></li>
+        </ul>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="avatar-ctn">
+                        <img src="{{user.profile_image}}" alt="user profile" class="avatar">
+                        <form class="card-inp" method="POST" action="/auth/image" enctype="multipart/form-data">
+                            <label for="input-file">Change Image</label>
+                            <input class="input-non" type="file" accept="image/*" id="input-file" name="profile">
+                            <input class="inpsub" type="submit" value="Change Profile" >
+                        </form>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{user.username}}</h5>
+                        <p class="card-text">Hello I am a software developer who is doing some great things to get a
+                            bright future.</p>
+                        <a href="#" class="btn btn-primary">{{user.email}}</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-8">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <b>Profile page</b>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hey {{user.username}}, welcome back.</h5>
+                        <p class="card-text">This is your profile page as you see on facebook everyday.</p>
+                        <a href="https://www.facebook.com/suryansh.singhal.562/" target="_blank" class="btn btn-primary mb-4">Go facebook.</a>
+
+                        <div class="card-footer text-muted">
+                            This is a Node - MySql project
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
